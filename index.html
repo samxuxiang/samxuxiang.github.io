@@ -1,1 +1,146 @@
-Hello World
+<html>
+  <head>
+    <title>Justin Johnson</title>
+    <script src='js/jquery-1.11.2.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,100italic,100,300,300italic,400italic,500italic,900italic,700italic' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        font-family: 'sans-serif';
+        font-size: 16px;
+        background-color: #FFFCF4;
+        color: #4F6071;
+      }
+      .color1 {
+        background-color: #CCC;
+      }
+      #header {
+        width: 100%;
+        height: 360px;
+        background-color: #F0EAD6
+        /* background-color: #b30000; */
+        /* background-color: #CCC; */
+      }
+      #header-inner {
+        position: absolute;
+        width: 70%;
+        left: 30%;
+        top: 150px;
+      }
+      .img-me {
+        border: 3px solid white;
+        float: left;
+        height: 200px;
+      }
+      .header-text {
+        margin-top: 60px;
+        margin-left: 220px;
+      }
+      .header-text-name {
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .header-text-email {
+        font-size: 20px;
+        font-style: italic;
+      }
+      .header-text-desc {
+        font-size: 20px;
+      }
+      #contact-info {
+        position: absolute;
+        left: 80%;
+        width: 20%;
+        top: 360px;
+        height: 100px;
+        background-color: #EEE;
+      }
+      .vspace {
+        margin-bottom: 20px;
+      }
+      .vspace-top {
+        margin-top: 30px;
+      }
+      .paper-image {
+        width: 150px;
+      }
+      .paper-title {
+        font-weight: bold;
+      }
+      .paper-authors {
+        font-style: italic;
+      }
+      .paper-link {
+      }
+    </style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-50623594-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div id='header'>
+      <div id='header-inner'>
+        <img src='images/me-v2.jpg' class='img-circle img-me'>
+        <div class='header-text'>
+          <div class='header-text-name'>
+            Xiang Xu
+          </div>
+          <div class='header-text-email'>
+            xiangxu at andrew dot cmu dot edu
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='container'>
+      <div class='col-md-11 col-md-offset-1'>
+        <div class='row'>
+          <h1>About</h1>
+          <div class='vspace'>
+            I am an ECE undergrad advised by
+            <a href='http://www.cs.cmu.edu/~kkitani/' target='_blank'>
+              Professor Kris Kitani
+            </a>.
+          </div>
+          <div>
+            I'm mainly interested in deep learning, especially in the area of computer vision. Recently I have worked on topics
+            such as Model Compression, Image Retrieval, defense again adversarial examples and etc. 
+          </div>
+        </div>
+        
+
+          <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='papers/densecap/SimpleSystem.svg'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                Error Correction Maximization for Deep Image Hashing
+              </div>
+              <div class='paper-authors'>
+                <u>Xiang Xu*</u>, Xiaofang Wang*, Kris Kitani
+              <br>
+                [* indicates equal contribution]
+              </div>
+              <div>
+                in submission
+              </div>
+              <div>
+                <a href='xxx'>[pdf]</a>
+                <a href='xxx'>[code]</a>
+              </div>
+            </div>
+          </div>
+
+         
+      </div>
+    </div>
+  </body>
+</html>
+

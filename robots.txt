@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://friedrich1006.github.io/sitemap.xml

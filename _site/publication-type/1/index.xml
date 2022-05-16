@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | Shengcao Cao</title>
+    <link>https://friedrich1006.github.io/publication-type/1/</link>
+      <atom:link href="https://friedrich1006.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Oct 2021 17:00:23 +0000</lastBuildDate>
+    <image>
+      <url>https://friedrich1006.github.io/media/icon_hu77aeed2819259489d47b9bffffe5ae63_4044_512x512_fill_lanczos_center_3.png</url>
+      <title>1</title>
+      <link>https://friedrich1006.github.io/publication-type/1/</link>
+    </image>
+    
+    <item>
+      <title>Rethinking Transformer-Based Set Prediction for Object Detection</title>
+      <link>https://friedrich1006.github.io/publication/rethinking-transformer-based-set-prediction-for-object-detection/</link>
+      <pubDate>Tue, 12 Oct 2021 17:00:23 +0000</pubDate>
+      <guid>https://friedrich1006.github.io/publication/rethinking-transformer-based-set-prediction-for-object-detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neighborhood-Aware Neural Architecture Search</title>
+      <link>https://friedrich1006.github.io/publication/neighborhood-aware-neural-architecture-search/</link>
+      <pubDate>Thu, 13 May 2021 17:00:05 +0000</pubDate>
+      <guid>https://friedrich1006.github.io/publication/neighborhood-aware-neural-architecture-search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learnable Embedding Space for Efficient Neural Architecture Compression</title>
+      <link>https://friedrich1006.github.io/publication/learnable-embedding-space-for-efficient-neural-architecture-compression/</link>
+      <pubDate>Thu, 25 Apr 2019 17:00:00 +0000</pubDate>
+      <guid>https://friedrich1006.github.io/publication/learnable-embedding-space-for-efficient-neural-architecture-compression/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

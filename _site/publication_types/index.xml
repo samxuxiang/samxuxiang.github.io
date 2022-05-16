@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication_types | Shengcao Cao</title>
+    <link>https://friedrich1006.github.io/publication_types/</link>
+      <atom:link href="https://friedrich1006.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publication_types</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Oct 2021 17:00:23 +0000</lastBuildDate>
+    <image>
+      <url>https://friedrich1006.github.io/media/icon_hu77aeed2819259489d47b9bffffe5ae63_4044_512x512_fill_lanczos_center_3.png</url>
+      <title>Publication_types</title>
+      <link>https://friedrich1006.github.io/publication_types/</link>
+    </image>
+    
+  </channel>
+</rss>

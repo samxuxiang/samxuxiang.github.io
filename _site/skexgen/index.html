@@ -13,7 +13,7 @@
                                 Pradeep Kumar Jayaraman,
                                 Yasutaka Furukawa">
 
-    <title>SkexGen: Generating CAD Construction Sequences by Autoregressive VAE with Disentangled Codebooks</title>
+    <title>SkexGen: Autoregressive Generation of CAD Construction Sequences with Disentangled Codebooks</title>
     <!-- Bootstrap core CSS -->
     <!--link href="bootstrap.min.css" rel="stylesheet"-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -27,20 +27,20 @@
 <body>
 <div class="jumbotron jumbotron-fluid">
     <div class="container"></div>
-    <h2>SkexGen: Generating CAD Construction Sequences by  <br> Autoregressive VAE with Disentangled Codebooks</h2>
+    <h2>SkexGen: Autoregressive Generation of CAD <br> Construction Sequences with Disentangled Codebooks </h2>
     <hr>
     <p class="authors">
         <a href="https://samxuxiang.github.io/"> Xiang Xu</a>,
         <a href="https://www.karlddwillis.com/"> Karl D.D. Willis</a>,
-        <a href="https://www.autodesk.com/research/people/joseph-lambourne"> Joseph G. Lambourne</a>, <br>
-        <a href="https://scholar.google.com/citations?user=TmYzzFcAAAAJ&hl=en"> Chin-Yi Cheng</a>,
+        <a href="https://www.autodesk.com/research/people/joseph-lambourne"> Joseph G. Lambourne</a>, 
+        <a href="https://scholar.google.com/citations?user=TmYzzFcAAAAJ&hl=en"> Chin-Yi Cheng</a>, <br>
         <a href="https://www.autodesk.com/research/people/pradeep-kumar-jayaraman"> Pradeep Kumar Jayaraman</a>,
         <a href="https://www.cs.sfu.ca/~furukawa/"> Yasutaka Furukawa</a>,</br>
         ICML 2022
     </p>
     <div class="btn-group" role="group" aria-label="Top menu">
         <a class="btn btn-primary" href="xxx">Paper</a>
-        <a class="btn btn-primary" href="xxx">Video</a>
+        <a class="btn btn-primary" href="https://www.youtube.com/watch?v=j5LB7yMwNVE">Video</a>
         <a class="btn btn-primary" href="https://github.com/samxuxiang/SkexGen">Code</a>
     </div>
 </div>
@@ -57,7 +57,7 @@
         <h2>Abstract</h2>
         <hr>
         <p>
-        This paper presents a novel VAE-based autoregressive generative model for computer-aided design (CAD) construction sequences, in particular,
+        This paper presents a novel autoregressive generative model for computer-aided design (CAD) construction sequences, in particular,
         sketch-and-extrude operations. Our model SkexGen utilizes distinct Transformer architectures to encode topological and geometric variations of
         construction sequences into disentangled codebooks. Autoregressive Transformer decoders generate CAD construction sequences sharing certain
         topological and geometric properties specified by the codebook vectors. Extensive experimental validations demonstrate that our 
@@ -67,6 +67,15 @@
     </div>
 
     <div class="section">
+        <h2>Video</h2>
+		<hr>
+		<div class="vcontainer">
+			<iframe class="video" src="https://www.youtube.com/embed/j5LB7yMwNVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+    </div>
+
+
+    <!-- <div class="section">
         <h2>CAD Construction Sequence: Sketch and Extrude</h2>
         <hr>
         <div class="row align-items-center">
@@ -76,10 +85,10 @@
             </div>
         </div>
         
-    </div>
+    </div> -->
 
     <div class="section">
-	    <h2>Overview</h2>
+	    <h2>Framework</h2>
         <hr>
 
         <p>
@@ -95,39 +104,89 @@
         </div>
     </div>
 
-    <div class="section">
-        <h2>3min Talk</h2>
-		<hr>
-		<div class="vcontainer">
-			<iframe class="video" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-    </div>
 
     <div class="section">
-        <h2>Results Video</h2>
+	    <h2>Random Generation Result</h2>
         <hr>
-		<div class="vcontainer">
-			<iframe class="video" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
 
+        <p>
+        Codes are randomly sampled based on code prior and then pass to SkexGen decoders for autoregressive generation. We demonstrate that SkexGen can generate high-quality and diverse sketch-and-extrude CAD construction sequences (rendered here for visualization).
+        </p>
+        <div class="row align-items-center">
+            <div class="col justify-content-center text-center">
+					<img src="img/cad_rand.png" style="width:100%; margin-right:-20px; margin-top:-10px;">
+            </div>
+        </div>
     </div>
+    
+
+    <div class="section">
+	    <h2>Conditional Generation Result</h2>
+        <hr>
+
+        <p>
+        Conditioned on the same code, SkexGen can generate diverse shapes with similar topology, geometry, or extrusion features.
+
+        </p>
+        <div class="row align-items-center">
+            <div class="col justify-content-center text-center">
+					<img src="img/cond_gen.png" style="width:100%; margin-right:-20px; margin-top:-10px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+	    <h2>Design Exploration Result</h2>
+        <hr>
+
+        <p>
+        SkexGen supports efficient design exploration where codes from different models are mixed to create a new one.
+
+        </p>
+        <div class="row align-items-center">
+            <div class="col justify-content-center text-center">
+					<img src="img/explore1.png" style="width:100%; margin-right:-20px; margin-top:-10px;">
+            </div>
+            <div class="col justify-content-center text-center">
+                <img src="img/explore2.png" style="width:100%; margin-right:-20px; margin-top:-10px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+	    <h2>Latent Interpolation Result</h2>
+        <hr>
+
+        <p>
+        SkexGen can generate intermediate CAD models by performing latent interpolation in the code space.  Topology, geometry, and extrude codes are interpolated together.  Left-most column is the source and right-most column is the target shape 
+
+        </p>
+        <div class="row align-items-center">
+            <div class="col justify-content-center text-center">
+					<img src="img/interpolate.png" style="width:100%; margin-right:-20px; margin-top:-10px;">
+            </div>
+        </div>
+    </div>
+
 
   
-    <div class="section">
-        <h2>Citation</h2>
+    <!-- <div class="section">
+        <h2>Bibtex</h2>
         <hr>
         <div class="bibtexsection">
 			@InProceedings{xxx, 
 				author    = {xxx},
-				title     = {SkexGen: Generating CAD Construction Sequences by Autoregressive VAE with Disentangled Codebooks},
+				title     = {SkexGen: Autoregressive Generation of CAD Construction Sequences with Disentangled Codebooks},
 				booktitle = {xxx},
 				month     = {xxx},
 				year      = {xxx},
 				pages     = {xxx}
 			}
         </div>
-    </div>
+    </div> -->
 
+
+    
     <footer>
         <p>Send feedback and questions to <a href="https://samxuxiang.github.io/">Xiang Xu</a>. Website template from <a href="https://www.vincentsitzmann.com/metasdf/">MetaSDF</a>.</p>
     </footer>
